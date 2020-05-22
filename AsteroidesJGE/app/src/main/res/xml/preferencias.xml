@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:key="preferencias_principal" >
+    <CheckBoxPreference
+        android:key="musica"
+        android:title="Reproducir música"
+        android:summary="Se reproduce música de fondo"/>
+    <ListPreference
+        android:key="graficos"
+        android:title="Tipo de gráficos"
+        android:summary="Se escoge la representación de gráficos"
+        android:entries="@array/tiposGraficos"
+        android:entryValues="@array/tiposGraficosValores"
+        android:defaultValue="0"/>
+    <EditTextPreference
+        android:key="fragmentos"
+        android:title="Número de Fragmentos"
+        android:summary="En cuantos trozos se divide un asteroide"
+        android:inputType="number"
+        android:defaultValue="3"/>
+    <ListPreference
+        android:key="controles"
+        android:title="Controles"
+        android:summary="Se escoge el tipo de control para el juego"
+        android:entries="@array/tiposControles"
+        android:entryValues="@array/tiposControles"
+        android:defaultValue="Táctil"/>
+    <PreferenceCategory
+        android:title="Modo multijugador"
+        android:key="preferencias_multijugador">
+        <CheckBoxPreference
+            android:title="Des/Activar el multijugador"
+            android:key="activacion"
+            android:summary="Multijugador activado"/>
+        <EditTextPreference
+            android:key="maxjugadores"
+            android:title="Máximo de jugadores"
+            android:summary="El número máximo de jugadores"
+            android:inputType="number"
+            android:defaultValue="2"/>
+        <ListPreference
+            android:title="Tipo de conexión"
+            android:key="conexion"
+            android:summary="Tipo de conexión a elegir"
+            android:entries="@array/tiposConexion"
+            android:entryValues="@array/tiposConexion"
+            android:defaultValue="Wi-Fi"/>
+    </PreferenceCategory>
+</PreferenceScreen>

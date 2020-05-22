@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">AsteroidesJGE</string>
+    <string name="asteroides">Asteroides</string>
+    <string name="jugar">Jugar</string>
+    <string name="configurar">Configurar</string>
+    <string name="puntuaciones">Puntuaciones</string>
+    <string name="acerca_de">Acerca de</string>
+    <string name="salir">Salir</string>
+</resources>
